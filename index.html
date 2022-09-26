@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor ASCII</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Conversor de caracteres a ASCII</h1>
+    </div>
+    <div class="container">
+        <form class= "data-container" onsubmit="return false">
+            <div class="char-container">
+                <label class="title">Value</label>
+                <input type="text" id="txtCaracter" class="txtCaracter" placeholder="_">
+            </div>
+            <div class="btn-container">
+                <input type="button" id="btnConvertir" class="btnConvertir" value="Convert" onclick="Convertir()">
+                <label class="lblCheck">
+                    <input type="radio" id="btnToASCII" class="btnToASCII" name="btnToASCII" checked>
+                    <label class="txtToASCII" for="btnToASCII">To ASCII</label>
+                </label>
+                <label class="lblCheck">
+                    <input type="radio" id="btnToChar" class="btnToChar" name="btnToASCII">
+                    <label class="txtToChar" for="btnToChar">To Char</label>
+                </label>
+            </div>
+            <div class="result-container">
+                <label class="title">Result</label>
+                <input type="text" id="txtResult" class="txtResult" placeholder="_">
+            </div>
+        </form>
+    </div>
+    <footer class="footer-container">
+        <div>
+            <span>© 2022 Daniel Domínguez.</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
